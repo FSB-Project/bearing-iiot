@@ -38,11 +38,16 @@ theme:
         - navigation.footer
         - navigation.tracking
         - navigation.instant
+        - navigation.indexes
         - search.suggest
         - search.highlight
         - search.share
         - content.code.copy
         - content.code.annotate
+
+    icon:
+        logo: material/engine
+        favicon: material/engine-outline
 
 plugins:
     - search
@@ -78,9 +83,12 @@ extra:
 
 nav:
     - Trang chủ: index.md
-    - Kiến trúc hệ thống: architecture.md
-    - Đặc tả kỹ thuật: specification.md
-    - Mô hình học máy: ml-models.md
-    - Tối ưu hóa (OR-Tools): or-tools.md
-    - Kiểm thử: testing.md
-    - Lộ trình phát triển: roadmap.md
+    - Kỹ thuật & Kiến trúc:
+          - architecture.md
+          - specification.md
+    - Trí tuệ nhân tạo (AI):
+          - ml-models.md
+          - or-tools.md
+    - Quản lý dự án:
+          - testing.md
+          - roadmap.md
