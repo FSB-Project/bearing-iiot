@@ -1,0 +1,14 @@
+# MkDocs
+site/
+docs/site/
+.cache/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env/
+.pytest_cache/
