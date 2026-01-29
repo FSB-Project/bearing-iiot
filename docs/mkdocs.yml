@@ -78,3 +78,9 @@ extra:
 
 nav:
     - Trang chủ: index.md
+    - Kiến trúc hệ thống: architecture.md
+    - Đặc tả kỹ thuật: specification.md
+    - Mô hình học máy: ml-models.md
+    - Tối ưu hóa (OR-Tools): or-tools.md
+    - Kiểm thử: testing.md
+    - Lộ trình phát triển: roadmap.md
