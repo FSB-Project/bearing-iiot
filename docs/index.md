@@ -1,21 +1,21 @@
 # IIoT Bearing PdM System :gear:
 
-Hệ thống giám sát tình trạng vòng bi ứng dụng IIoT và Bảo trì dự báo (PdM).
+IIoT-based Bearing Condition Monitoring and Predictive Maintenance (PdM) System.
 
 ---
 
-## Các mục chính
+## Key Sections
 
-*   **Kiến trúc Hệ thống**: Tìm hiểu về cấu trúc 3 lớp: Perception, Network và Application. ([Chi tiết](architecture.md))
-*   **Đặc tả Kỹ thuật**: Thông số chi tiết về cảm biến gia tốc, nhiệt độ và Gateway. ([Xem ngay](specification.md))
-*   **Mô hình AI & ML**: Các thuật toán Anomaly Detection và RUL. ([Khám phá](ml-models.md))
-*   **Lộ trình Phát triển**: Theo dõi các giai đoạn triển khai. ([Theo dõi](roadmap.md))
+*   **System Architecture**: Overview of the three-layer architecture: Perception, Network, and Application. ([Details](technical/architecture.md))
+*   **Technical Specifications**: Detailed specifications for accelerometers, temperature sensors, and the Gateway. ([View Now](technical/specification.md))
+*   **AI & ML Models**: Algorithms for Anomaly Detection and Remaining Useful Life (RUL) prediction. ([Explore](ai/ml-models.md))
+*   **Development Roadmap**: Tracking the deployment phases. ([Track](project-management/roadmap.md))
 
 ---
 
-## Hướng dẫn nhanh
+## Quick Start Guide
 
-!!! success "Bắt đầu nhanh"
-    1.  **Cài đặt**: Lắp đặt cảm biến lên vỏ vòng bi.
-    2.  **Kết nối**: Khấu hình Wifi/LoRa cho Gateway.
-    3.  **Giám sát**: Truy cập Dashboard tại trang web nội bộ.
+!!! success "Quick Start"
+    1.  **Installation**: Mount the sensors onto the bearing housing.
+    2.  **Connection**: Configure Wifi/LoRa settings for the Gateway.
+    3.  **Monitoring**: Access the Dashboard via the internal web portal.

@@ -1,20 +1,20 @@
-# Kết quả Kiểm thử (Test Results)
+# Test Results
 
-Báo cáo kết quả kiểm thử thực tế của hệ thống.
+Report on the actual testing results of the system.
 
-## Tổng quát
-- **Phiên bản thử nghiệm**: v1.0.0
-- **Ngày thực hiện**: 29/01/2026
-- **Trạng thái**: 🟢 Pass (95%)
+## Overview
+- **Test Version**: v1.0.0
+- **Execution Date**: 29/01/2026
+- **Status**: 🟢 Pass (95%)
 
-## Chi tiết kết quả
+## Detailed Results
 
-| Mã kịch bản | Tên kịch bản | Kết quả | Ghi chú |
+| Case ID | Case Name | Result | Notes |
 |:---:|:---|:---:|:---|
-| TC-HW-01 | Kiểm tra độ chính xác cảm biến | ✅ Pass | Sai số < 1% |
-| TC-HW-02 | Khả năng chịu nhiệt | ✅ Pass | Hoạt động ổn định ở 70°C |
-| TC-CN-01 | Tự động kết nối lại | ✅ Pass | Thời gian < 5s |
-| TC-SW-01 | Độ chính xác AI | ⚠️ Warn | Cần thêm dữ liệu cho Bearing loại B |
+| TC-HW-01 | Sensor Accuracy Check | ✅ Pass | Error < 1% |
+| TC-HW-02 | Thermal Endurance | ✅ Pass | Stable operation at 70°C |
+| TC-CN-01 | Auto Reconnection | ✅ Pass | Reconnection time < 5s |
+| TC-SW-01 | AI Accuracy | ⚠️ Warn | Needs more data for Bearing Type B |
 
-## Kết luận
-Hệ thống đạt yêu cầu để triển khai thử nghiệm tại phân xưởng.
+## Conclusion
+The system meets the requirements for pilot deployment at the workshop.

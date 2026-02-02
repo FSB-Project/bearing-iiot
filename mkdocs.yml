@@ -1,11 +1,11 @@
 site_name: IIoT Bearing PdM System
-site_url: https://FSB-IoT-Project.github.io/bearing-iiot/
-repo_url: https://github.com/FSB-IoT-Project/bearing-iiot
+site_url: https://FSB-Project.github.io/bearing-iiot/
+repo_url: https://github.com/FSB-Project/bearing-iiot
 edit_uri: edit/main/docs/
 
 theme:
     name: material
-    language: vi
+    language: en
     palette:
         # Palette toggle for light mode
         - media: "(prefers-color-scheme: light)"
@@ -83,22 +83,21 @@ extra:
           link: https://www.linkedin.com/in/buiductrung29/
 
 nav:
-    - Trang chủ: index.md
-    - Kỹ thuật & Kiến trúc:
-          - architecture.md
-          - specification.md
-    - Phần cứng (Hardware):
+    - Home: index.md
+    - Engineering & Architecture:
+          - technical/architecture.md
+          - technical/specification.md
+    - Hardware:
           - hardware/esp32.md
           - hardware/raspberry-pi.md
           - hardware/cloud-server.md
-    - Trí tuệ nhân tạo (AI):
-          - ml-models.md
-          - or-tools.md
-    - Kiểm thử (Testing):
-          - testing.md
+    - Artificial Intelligence (AI):
+          - ai/ml-models.md
+          - ai/or-tools.md
+    - Testing:
           - testing-project/test-strategy.md
           - testing-project/test-results.md
-    - Quản lý dự án:
-          - Lộ trình: roadmap.md
-          - Hướng dẫn thiết kế: style-guide.md
-    - Tài liệu tham khảo: references.md
+    - Project Management:
+          - Roadmap: project-management/roadmap.md
+          - Design Guidelines: project-management/style-guide.md
+    - References: reference/references.md

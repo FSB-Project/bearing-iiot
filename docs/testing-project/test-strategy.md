@@ -1,18 +1,23 @@
-# Chiến lược Kiểm thử (Test Strategy)
+# Test Strategy
 
-Tài liệu này mô tả các phương pháp và kịch bản kiểm thử cho hệ thống IIoT Bearing PdM.
+This document describes the testing methods and scenarios for the IIoT Bearing PdM system.
 
-## Các kịch bản kiểm thử (Test Cases)
+## Testing Phases
+- **Unit Testing**: Testing individual signal processing functions.
+- **Integration Testing**: Testing connectivity between sensors and the gateway.
+- **Field Testing**: Real-world field trials at the factory.
 
-### 1. Kiểm thử phần cứng (Hardware Testing)
-- **TC-HW-01**: Kiểm tra độ chính xác của cảm biến gia tốc so với thiết bị chuẩn.
-- **TC-HW-02**: Kiểm tra khả năng chịu nhiệt của ESP32 trong môi trường công nghiệp.
-- **TC-HW-03**: Kiểm tra mức tiêu thụ điện năng của node cảm biến.
+## Test Cases
 
-### 2. Kiểm thử kết nối (Connectivity Testing)
-- **TC-CN-01**: Kiểm tra khả năng tự động kết nối lại khi mất tín hiệu Wi-Fi/LoRa.
-- **TC-CN-02**: Kiểm tra độ trễ truyền tin từ ESP32 đến Gateway.
+### 1. Hardware Testing
+- **TC-HW-01**: Verify accelerometer accuracy against a calibrated standard.
+- **TC-HW-02**: Verify thermal endurance of the ESP32 in an industrial environment.
+- **TC-HW-03**: Measure power consumption of the sensor node.
 
-### 3. Kiểm thử phần mềm & AI (Software & AI Testing)
-- **TC-SW-01**: Kiểm tra độ chính xác của mô hình dự báo RUL.
-- **TC-SW-02**: Kiểm tra thời gian phản hồi của Dashboard khi truy vấn dữ liệu lớn.
+### 2. Connectivity Testing
+- **TC-CN-01**: Verify automatic reconnection capability upon Wi-Fi/LoRa signal loss.
+- **TC-CN-02**: Measure data transmission latency from ESP32 to Gateway.
+
+### 3. Software & AI Testing
+- **TC-SW-01**: Verify the accuracy of the RUL prediction model.
+- **TC-SW-02**: Measure Dashboard response time when querying large datasets.
