@@ -8,6 +8,34 @@
     --jira-light-text: #172b4d;
     --jira-light-subtext: #42526e;
     --jira-light-border: #dfe1e6;
+
+    /* Diagram Colors - Light Mode */
+    --diagram-bg: var(--jira-light-bg);
+    --diagram-stroke: var(--jira-light-text);
+    --diagram-fill: var(--jira-light-sidebar);
+}
+
+.interactive-diagram svg {
+    background-color: transparent !important;
+}
+
+/* 
+   Universal Text Fix: 
+   Allow labels to overflow their fixed boxes and center themselves.
+*/
+.interactive-diagram foreignObject {
+    overflow: visible;
+}
+.interactive-diagram foreignObject > div {
+    width: max-content !important;
+    height: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* MkDocs Material Overrides - Light Mode */
@@ -36,6 +64,11 @@
     --jira-dark-text: #c1c7d0;
     --jira-dark-subtext: #8c9bab;
     --jira-dark-border: #333c44;
+
+    /* Diagram Colors - Dark Mode */
+    --diagram-bg: var(--jira-dark-bg);
+    --diagram-stroke: var(--jira-dark-text);
+    --diagram-fill: var(--jira-dark-surface);
 
     --md-primary-fg-color: #22272b; /* Deep dark header like Jira */
     --md-primary-fg-color--light: var(--jira-dark-surface);
