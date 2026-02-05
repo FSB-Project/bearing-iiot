@@ -94,6 +94,7 @@ nav:
     - Hardware:
           - hardware/esp32.md
           - hardware/raspberry-pi.md
+          - hardware/tp-link-router.md
           - hardware/cloud-server.md
     - Artificial Intelligence (AI):
           - ai/ml-models.md
