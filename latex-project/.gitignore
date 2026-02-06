@@ -1,3 +1,6 @@
+# Directories to ignore
+agents/
+
 # LaTeX auxiliary files
 *.aux
 *.lof
