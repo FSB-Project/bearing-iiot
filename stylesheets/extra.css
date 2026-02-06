@@ -1,0 +1,116 @@
+/* Jira Inspired Theme for MkDocs Material */
+
+:root {
+    /* Light Mode - Jira Blue Palette */
+    --jira-blue: #0052cc;
+    --jira-light-bg: #ffffff;
+    --jira-light-sidebar: #f4f5f7;
+    --jira-light-text: #172b4d;
+    --jira-light-subtext: #42526e;
+    --jira-light-border: #dfe1e6;
+
+    /* Diagram Colors - Light Mode */
+    --diagram-bg: var(--jira-light-bg);
+    --diagram-stroke: var(--jira-light-text);
+    --diagram-fill: var(--jira-light-sidebar);
+}
+
+.interactive-diagram svg {
+    background-color: transparent !important;
+}
+
+/* 
+   Universal Text Fix: 
+   Allow labels to overflow their fixed boxes and center themselves.
+*/
+.interactive-diagram foreignObject {
+    overflow: visible;
+}
+.interactive-diagram foreignObject > div {
+    width: max-content !important;
+    height: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MkDocs Material Overrides - Light Mode */
+[data-md-color-scheme="default"] {
+    --md-primary-fg-color: var(--jira-blue);
+    --md-primary-fg-color--light: #0747a6;
+    --md-primary-fg-color--dark: #003366;
+
+    --md-typeset-color: var(--jira-light-text);
+    --md-typeset-a-color: var(--jira-blue);
+
+    --md-default-bg-color: var(--jira-light-bg);
+    --md-default-fg-color: var(--jira-light-text);
+    --md-default-fg-color--light: var(--jira-light-subtext);
+
+    /* Sidebar styling */
+    --md-sidebar-bg-color: var(--jira-light-sidebar);
+}
+
+/* MkDocs Material Overrides - Dark Mode */
+[data-md-color-scheme="slate"] {
+    /* Dark Mode - Jira Slate Palette */
+    --jira-dark-primary: #579dff;
+    --jira-dark-bg: #1d2125;
+    --jira-dark-surface: #22272b;
+    --jira-dark-text: #c1c7d0;
+    --jira-dark-subtext: #8c9bab;
+    --jira-dark-border: #333c44;
+
+    /* Diagram Colors - Dark Mode */
+    --diagram-bg: var(--jira-dark-bg);
+    --diagram-stroke: var(--jira-dark-text);
+    --diagram-fill: var(--jira-dark-surface);
+
+    --md-primary-fg-color: #22272b; /* Deep dark header like Jira */
+    --md-primary-fg-color--light: var(--jira-dark-surface);
+
+    --md-accent-fg-color: var(--jira-dark-primary);
+
+    --md-default-bg-color: var(--jira-dark-bg);
+    --md-default-fg-color: var(--jira-dark-text);
+    --md-default-fg-color--light: var(--jira-dark-subtext);
+
+    --md-typeset-color: var(--jira-dark-text);
+    --md-typeset-a-color: var(--jira-dark-primary);
+
+    /* Code blocks & Admonitions in Dark Mode */
+    --md-code-bg-color: #091e42;
+    --md-admonition-bg-color: #22272b;
+}
+
+/* Global Font Enhancements */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* High Contrast for Links on Hover */
+.md-typeset a:hover {
+    text-decoration: underline;
+    opacity: 0.85;
+}
+
+/* Custom Scrollbar Jira-style */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #c1c7d0;
+    border-radius: 10px;
+}
+[data-md-color-scheme="slate"] ::-webkit-scrollbar-thumb {
+    background: #333c44;
+}
